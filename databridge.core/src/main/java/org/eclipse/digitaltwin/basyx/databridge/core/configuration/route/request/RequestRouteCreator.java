@@ -80,7 +80,7 @@ public class RequestRouteCreator extends AbstractRouteCreator {
 
 	private List<String> getUnmappedEndpoints(String[] dataSinkEndpoints, Map<String, String[]> dataSinkMapping) {
 		return Arrays.stream(dataSinkEndpoints)
-				.filter(Predicate.not(dataSinkMapping::containsKey))
+				.filter(endpoint -> !dataSinkMapping.containsKey(endpoint))
 				.collect(Collectors.toList());
 	}
 
