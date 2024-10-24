@@ -1,0 +1,59 @@
+{
+    "$id": "https://example.com/person.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "bacnetconsumer.json",
+    "type": "object",
+    "required": [
+        "uniqueId",
+        "ipAddress",
+        "deviceId",
+		"objectType",
+		"instanceNr",
+		"propertyId"
+    ],
+    "properties": {
+        "uniqueId": {
+            "title": "Unique ID",
+            "type": "string",
+            "description": "Unique ID to match options",
+            "pattern": "^[a-z0-9-]+$"
+        },
+		"ipAddress": {
+            "title": "IP",
+            "type": "string",
+            "description": "IP of the BACnet Server",
+            "default": "127.0.0.1",
+            "pattern": "^([a-z0-9-_\\.]+\\.[a-z]{1,3}|[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})$"
+        },
+		"deviceId": {
+            "title": "Device ID",
+            "description": "Device ID of the BACnet Server",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+		"objectType": {
+            "title": "Object Type",
+            "description": "Object Type of the BACnet Server",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+		"instanceNr": {
+            "title": "Instance Nr",
+            "description": "Instance Nr of the BACnet Object",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+		"propertyId": {
+            "title": "Property ID",
+            "description": "Property ID",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        }
+	}
+}
+		
+		
