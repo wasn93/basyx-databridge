@@ -1,4 +1,4 @@
-package org.eclipse.digitaltwin.basyx.databridge.bacnet;
+package org.eclipse.digitaltwin.basyx.databridge.bacnet.configuration;
 
 import org.eclipse.digitaltwin.basyx.databridge.core.configuration.entity.DataSourceConfiguration;
 

@@ -1,6 +1,6 @@
-package org.eclipse.digitaltwin.basyx.databridge.bacnet.factory;
+package org.eclipse.digitaltwin.basyx.databridge.bacnet.configuration.factory;
 
-import org.eclipse.digitaltwin.basyx.databridge.bacnet.BACnetConsumerConfiguration;
+import org.eclipse.digitaltwin.basyx.databridge.bacnet.configuration.BACnetConsumerConfiguration;
 import org.eclipse.digitaltwin.basyx.databridge.core.configuration.factory.DataSourceConfigurationFactory;
 
 public class BACnetDefaultConfigurationFactory extends DataSourceConfigurationFactory {
