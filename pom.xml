@@ -10,6 +10,7 @@
 	<description>Parent POM for Eclipse BaSyx DataBridge</description>
 
 	<modules>
+		<module>databridge.bacnet</module>
 		<module>databridge.core</module>
 		<module>databridge.camel-aas</module>
 		<module>databridge.camel-activemq</module>
